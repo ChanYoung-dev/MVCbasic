@@ -40,10 +40,12 @@ public class FrontControllerServletV4 extends HttpServlet {
         }
         // 요청 파라미터 정보들(username, age,...)을 Map에 저장
         Map<String, String> paramMap = createParamMap(request);
-        // 2.컨트롤러 호출
-        // 3. ModelView 반환
-        // 요청 정보의 인자를 사용하여 로직을 수행한뒤 모델을 반환하는 컨트롤러
+
+        // 로직을 수행하고 저장될 모델
         Map<String, Object> model = new HashMap<>();
+        // 2. 컨트롤러 호출
+        // 3. viewName 반환 /기존에는 ModelView
+        // 요청 파라미터를 사용하여 로직을 수행한뒤 모델과 논리주소(new-form)을 반환하는 컨트롤러
         String viewName = controller.process(paramMap, model);
 
         //4. viewResolver 호출
