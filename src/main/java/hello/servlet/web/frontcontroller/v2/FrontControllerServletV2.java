@@ -20,8 +20,8 @@ public class FrontControllerServletV2 extends HttpServlet {
     private Map<String, ControllerV2> controllerMap = new HashMap<>();
 
     public FrontControllerServletV2() {
-        controllerMap.put("/front-controller/v2/new-form", new MemberFormControllerV2());
-        controllerMap.put("/front-controller/v2/save", new MemberSaveControllerV2());
+        controllerMap.put("/front-controller/v2/members/new-form", new MemberFormControllerV2());
+        controllerMap.put("/front-controller/v2/members/save", new MemberSaveControllerV2());
         controllerMap.put("/front-controller/v2/members", new MemberListControllerV2());
         System.out.println("hi");
     }
