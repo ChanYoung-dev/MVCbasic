@@ -15,6 +15,6 @@ public class MemberFormControllerV3 implements ControllerV3 {
         dispatcher.forward(request, response);
          */
         //return new MyView("/WEB-INF/views/new-forms.jsp");
-        return new ModelView("new-form");
+        return new ModelView("new-forms");
     }
 }
