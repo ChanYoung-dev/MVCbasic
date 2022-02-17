@@ -12,6 +12,6 @@ public class MemberFormControllerV4 implements ControllerV4 {
     public String process(Map<String, String> paramMap, Map<String, Object> model) {
         System.out.println("MemberFormControllerV4.process");
         //return new ModelView("new-form");
-        return "new-forms";
+        return "new-form";
     }
 }

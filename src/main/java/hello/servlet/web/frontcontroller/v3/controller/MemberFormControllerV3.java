@@ -10,11 +10,11 @@ public class MemberFormControllerV3 implements ControllerV3 {
     @Override
     public ModelView process(Map<String, String> paraMap) {
         /*
-        String viewPath = "/WEB-INF/views/new-forms.jsp";
+        String viewPath = "/WEB-INF/views/new-form.jsp";
         RequestDispatcher dispatcher = request.getRequestDispatcher(viewPath);
         dispatcher.forward(request, response);
          */
-        //return new MyView("/WEB-INF/views/new-forms.jsp");
-        return new ModelView("new-forms");
+        //return new MyView("/WEB-INF/views/new-form.jsp");
+        return new ModelView("new-form");
     }
 }
